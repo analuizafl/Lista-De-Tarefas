@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+/*Importando fonte de letra diferente, para o título principal.*/
+
+* {
+    box-sizing: border-box;
+    /*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Estilo da fonte.*/
+    background: #eeeeee;
+    /*Cor do fundo do site*/
+}
+
+h1 {
+    font-family: 'Bungee Shade', sans-serif;
+    /*Estilo da fonte*/
+    text-align: center;
+    font-size: 3rem;
+    /*Tamanho da fonte*/
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    /*Coloca o conteúdo em linha e permite a quebra de linha.*/
+    align-items: center;
+    width: 90%;
+    /*Largura*/
+    margin: auto auto;
+    /*Pra ficar bem centralizado no meio*/
+
+}
+
+input {
+    height: 120px;
+    /*Altura*/
+    font-size: 2rem;
+    /*Tamanho da fonte*/
+    width: 80%;
+    /*Largura*/
+    padding-left: 10%;
+    /*Padding a esquerda*/
+}
+
+button.add {
+    width: 20%;
+    cursor: pointer;
+    /*Pra ficar com o cursor de mãozinha*/
+    background: green;
+    /*Cor do botão*/
+    color: white;
+    /*Cor da letra*/
+    font-size: 20px;
+    font-weight: bold;
+    /*Pra fonte ficar em negrito*/
+    border: none;
+    /*Sem as bordas*/
+    height: 120px;
+    border-top-right-radius: 10px;
+    /*Borda do top a direita arredondada*/
+    border-bottom-right-radius: 10px;
+    /*Borda debaixo a direita arredondada*/
+
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: auto auto;
+    /* border: 1px solid blue;*/
+    /*Colocando uma borda pra entender melhor como ficará a divisão*/
+    padding-top: 40px;
+    /*Pra fazer um preenchimento*/
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100px;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*FAZENDO UMA SOMBRA, NA ÁREA DOS ITENS.*/
+    margin-bottom: 2%;
+    /*Colocando uma margin-bottom pra dar espaçamento entre os itens*/
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    /*Borda do top a direita arredondada*/
+    border-bottom-right-radius: 10px;
+    /*Borda debaixo a direita arredondada*/
+}
+
+.item-icone {
+    flex: 2%;
+    /*border: 1px solid orangered;*/
+    /*Colocando uma borda pra entender melhor como ficará a divisão*/
+    text-align: center;
+    /*Alinhando o icone ao centro*/
+}
+
+.item-nome {
+    flex: 55%;
+    /*border: 1px solid deeppink;*/
+    /*Colocando uma borda pra entender melhor como ficará a divisão*/
+    font-size: 30px;
+}
+
+.item-botao {
+    flex: 3%;
+    /*border: 1px solid green;*/
+    /*Colocando uma borda pra entender melhor como ficará a divisão*/
+}
+
+.item-icone img {
+    width: 15%;
+}
+
+.item-botao img {
+    display: flex;
+    width: 15%;
+    margin: auto;
+}
+
+.delete {
+    background: rgb(142, 1, 1);
+    /*Cor do botão*/
+    color: white;
+    /*Cor da letra*/
+    border: none;
+    /*Sem as bordas*/
+    padding: 10px;
+    /*Preenchimento*/
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    /*Borda do top a direita arredondada*/
+    border-bottom-right-radius: 10px;
+    /*Borda debaixo a direita arredondada*/
+
+}
+
+.item-iconee img {
+    width: 10%;
+    text-align: center;
+    margin-left: 39%;
+}
+
+.item.clicado {
+    background: #dAf6d9;
+    /*Trocando a cor de fundo do item da lista. (Quando ele for clicado)*/
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    /*Para deixar o texto com aquele efeito riscado (concluído)*/
+    color: gray;
+    /*Colocando uma cor na letra mais clara*/
+}
